@@ -26,7 +26,7 @@ const PROPERTY_NAMES = {
   date: "날짜",
   status: "상태",
   statusDoneValue: "완료",
-  synced: "동기화됨",
+  synced: "깃허브 동기화",
 };
 
 if (!NOTION_TOKEN || !DATABASE_ID) {
