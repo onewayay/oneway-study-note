@@ -1,0 +1,45 @@
+name: Sync Notion to GitHub
+
+on:
+  schedule:
+    - cron: "0 0 */2 * *" # 2일에 한번씩 실행 (홀수 날짜에 실행 됨)
+  workflow_dispatch: {} # Actions 탭에서 수동 실행 버튼도 사용 가능
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        working-directory: scripts/notion-sync
+        run: npm install
+
+      - name: Run Notion sync
+        working-directory: scripts/notion-sync
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          OUTPUT_DIR: ../../notion-sync
+        run: node index.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "notion-sync-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add notion-sync
+          if git diff --cached --quiet; then
+            echo "변경사항 없음, 커밋 생략"
+          else
+            git commit -m "chore: sync notion pages to markdown"
+            git push
+          fi
