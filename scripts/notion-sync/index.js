@@ -156,19 +156,12 @@ async function main() {
     try {
       const body = await pageToMarkdownBody(page.id);
 
-      const frontmatter = [
-        "---",
-        `title: "${title.replace(/"/g, '\\"')}"`,
-        `date: ${date}`,
-        `notion_page_id: ${page.id}`,
-        "---",
-        "",
-      ].join("\n");
+      const heading = `# ${title}\n\n`;
 
       const filename = `${sanitizeForFilename(title)}-${sanitizeForFilename(date)}.md`;
       const filepath = path.join(OUTPUT_DIR, filename);
 
-      fs.writeFileSync(filepath, frontmatter + body, "utf8");
+      fs.writeFileSync(filepath, heading + body, "utf8");
       console.log(`저장 완료: ${filepath}`);
 
       await markSynced(page.id);
