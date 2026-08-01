@@ -2,8 +2,10 @@ name: Sync Notion to GitHub
 
 on:
   schedule:
-    - cron: "0 0 */2 * *" # 2일에 한번씩 실행 (홀수 날짜에 실행 됨)
-  workflow_dispatch: {} # Actions 탭에서 수동 실행 버튼도 사용 가능
+    - cron: "0 0 * * *" # 매일 한국시간 오전 9시(UTC 0시)에 실행
+    # 이틀에 한 번으로 하고 싶으면 위 줄을 지우고 아래 줄 주석을 해제하세요
+    # - cron: "0 0 */2 * *" # 홀수 날짜마다 실행 (2일 간격에 근접)
+  workflow_dispatch: {} # Actions 탭에서 수동 실행 버튼으로 언제든 즉시 실행 가능
 
 permissions:
   contents: write
@@ -25,18 +27,18 @@ jobs:
         run: npm install
 
       - name: Run Notion sync
-        working-directory: scripts/notion-sync
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-          OUTPUT_DIR: ../../notion-sync
-        run: node index.js
+          OUTPUT_DIR: study-notes
+          README_PATH: README.md
+        run: node scripts/notion-sync/index.js
 
       - name: Commit and push changes
         run: |
           git config user.name "notion-sync-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add notion-sync
+          git add study-notes README.md
           if git diff --cached --quiet; then
             echo "변경사항 없음, 커밋 생략"
           else
