@@ -1,6 +1,7 @@
 # 공부한 내용을 노션으로 정리하고 깃허브에 연동합니다!
 
 <!-- NOTION_SYNC_LIST_START -->
+- 2026-08-03 - [AWS (Amazon Web Services)](study-notes/AWS%20(Amazon%20Web%20Services)-2026-08-03.md)
 - 2026-08-02 - [SaaS (Software as a Service) (소프트웨어 기반 서비스)](study-notes/SaaS%20(Software%20as%20a%20Service)%20(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EA%B8%B0%EB%B0%98%20%EC%84%9C%EB%B9%84%EC%8A%A4)-2026-08-02.md)
 - 2026-08-01 - [DevOps](study-notes/DevOps-2026-08-01.md)
 - 2026-07-31 - [REST / REST API / RESTful API](study-notes/REST%20REST%20API%20RESTful%20API-2026-07-31.md)
