@@ -1,6 +1,7 @@
 # 공부한 내용을 노션으로 정리하고 깃허브에 연동합니다!
 
 <!-- NOTION_SYNC_LIST_START -->
+- 2026-08-06 - [아키텍처](study-notes/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-2026-08-06.md)
 - 2026-08-05 - [CI/CD 파이프라인](study-notes/CICD%20%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-2026-08-05.md)
 - 2026-08-04 - [Docker](study-notes/Docker-2026-08-04.md)
 - 2026-08-03 - [AWS (Amazon Web Services)](study-notes/AWS%20(Amazon%20Web%20Services)-2026-08-03.md)
