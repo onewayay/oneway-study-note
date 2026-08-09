@@ -1,6 +1,7 @@
 # 공부한 내용을 노션으로 정리하고 깃허브에 연동합니다!
 
 <!-- NOTION_SYNC_LIST_START -->
+- 2026-08-07 - [상태관리 라이브러리 비교](study-notes/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%20%EB%B9%84%EA%B5%90-2026-08-07.md)
 - 2026-08-06 - [아키텍처](study-notes/%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-2026-08-06.md)
 - 2026-08-05 - [CI/CD 파이프라인](study-notes/CICD%20%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-2026-08-05.md)
 - 2026-08-04 - [Docker](study-notes/Docker-2026-08-04.md)
