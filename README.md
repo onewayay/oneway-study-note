@@ -1,6 +1,7 @@
 # 공부한 내용을 노션으로 정리하고 깃허브에 연동합니다!
 
 <!-- NOTION_SYNC_LIST_START -->
+- 2026-08-19 - [CSR, SSR, SSG (+ISR)](study-notes/CSR%2C%20SSR%2C%20SSG%20(%2BISR)-2026-08-19.md)
 - 2026-08-12 - [Next.js를 사용하는 이유와 장점은 무엇인가요?](study-notes/Next.js%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0%EC%99%80%20%EC%9E%A5%EC%A0%90%EC%9D%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94-2026-08-12.md)
 - 2026-08-11 - [리액트 성능 최적화를 위한 구체적인 방법은 무엇인가요?](study-notes/%EB%A6%AC%EC%95%A1%ED%8A%B8%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94%EB%A5%BC%20%EC%9C%84%ED%95%9C%20%EA%B5%AC%EC%B2%B4%EC%A0%81%EC%9D%B8%20%EB%B0%A9%EB%B2%95%EC%9D%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94-2026-08-11.md)
 - 2026-08-10 - [`<canvas>` 태그란 무엇인가요?](study-notes/canvas%20%ED%83%9C%EA%B7%B8%EB%9E%80%20%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94-2026-08-10.md)
